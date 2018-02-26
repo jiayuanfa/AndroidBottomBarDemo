@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             "http://www.androidstudy.cn/img/tabbar_message_center_highlighted.png",
             "http://www.androidstudy.cn/img/tabbar_discover_highlighted.png",
             "http://www.androidstudy.cn/img/tabbar_profile_highlighted.png",
-            "http://www.androidstudy.cn/img/tabbar_profile.png"
+            "http://www.androidstudy.cn/img/tabbar_profile_highlighted.png",
     };
 
 
