@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BottomTabDemo.iml" filepath="$PROJECT_DIR$/BottomTabDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BottomTabDemo.iml" filepath="$PROJECT_DIR$/BottomTabDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buttomtablayout/buttomtablayout.iml" filepath="$PROJECT_DIR$/buttomtablayout/buttomtablayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/buttomtablayout/buttomtablayout.iml" filepath="$PROJECT_DIR$/buttomtablayout/buttomtablayout.iml" />
     </modules>
   </component>

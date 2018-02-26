@@ -27,9 +27,10 @@ import java.util.Random;
  */
 public class MainActivity extends AppCompatActivity {
 
-    public final String TAG=MainActivity.class.getSimpleName();
+    public final String TAG = MainActivity.class.getSimpleName();
 
     private String[] mTabNames = {"首页", "消息", "搜索", "我的"};
+    private String[] mTabNetNames = {"网一", "网二", "网三", "网四","网五"};
 
     /**
      * 默认状态下的本地图片
@@ -56,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
             "http://www.androidstudy.cn/img/tabbar_home.png",
             "http://www.androidstudy.cn/img/tabbar_message_center.png",
             "http://www.androidstudy.cn/img/tabbar_discover.png",
-            "http://www.androidstudy.cn/img/tabbar_profile.png"};
+            "http://www.androidstudy.cn/img/tabbar_profile.png",
+            "http://www.androidstudy.cn/img/tabbar_profile.png"
+    };
 
     /**
      * 选中状态下的网络图片
@@ -65,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
             "http://www.androidstudy.cn/img/tabbar_home_selected.png",
             "http://www.androidstudy.cn/img/tabbar_message_center_highlighted.png",
             "http://www.androidstudy.cn/img/tabbar_discover_highlighted.png",
-            "http://www.androidstudy.cn/img/tabbar_profile_highlighted.png"};
+            "http://www.androidstudy.cn/img/tabbar_profile_highlighted.png",
+            "http://www.androidstudy.cn/img/tabbar_profile.png"
+    };
 
 
     /**
@@ -111,9 +116,11 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initData(boolean isUrl) {
         mBottomTabs.clear();
-        for (int i=0;i<mUnSelectIcons.length;i++){
-            BottomTab mBottomTab=new BottomTab(mTabNames[i],mUnSelectColor,
-                    mSelectColor,mUnSelectIcons[i],mSelectIcons[i],isUrl?mUnSelectUrls[i]:null,isUrl?mSelectUrls[i]:null);
+
+        int length = isUrl?mUnSelectUrls.length:mUnSelectIcons.length;
+        for (int i=0;i<length;i++){
+            BottomTab mBottomTab=new BottomTab(isUrl?mTabNetNames[i]:mTabNames[i],mUnSelectColor,
+                    mSelectColor,isUrl?0:mUnSelectIcons[i],isUrl?0:mSelectIcons[i],isUrl?mUnSelectUrls[i]:null,isUrl?mSelectUrls[i]:null);
             mBottomTabs.add(mBottomTab);
         }
         mBottomTabLayout.setBottomTabData(mBottomTabs);
